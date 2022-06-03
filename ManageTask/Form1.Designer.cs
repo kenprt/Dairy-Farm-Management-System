@@ -34,8 +34,6 @@ namespace ManageTask
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.Title title3 = new System.Windows.Forms.DataVisualization.Charting.Title();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
@@ -52,9 +50,9 @@ namespace ManageTask
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.Title title3 = new System.Windows.Forms.DataVisualization.Charting.Title();
             System.Windows.Forms.DataVisualization.Charting.Title title4 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.Title title5 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.Title title6 = new System.Windows.Forms.DataVisualization.Charting.Title();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -66,19 +64,13 @@ namespace ManageTask
             this.chart7 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chart8 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chart9 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.materialCard4 = new MaterialSkin.Controls.MaterialCard();
-            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.bunifuCircleProgress1 = new Bunifu.UI.WinForms.BunifuCircleProgress();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.materialLabel8 = new MaterialSkin.Controls.MaterialLabel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.materialCard3 = new MaterialSkin.Controls.MaterialCard();
             this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
             this.lblmilk = new MaterialSkin.Controls.MaterialLabel();
             this.materialCard2 = new MaterialSkin.Controls.MaterialCard();
             this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
+            this.lbltpay = new MaterialSkin.Controls.MaterialLabel();
             this.materialCard1 = new MaterialSkin.Controls.MaterialCard();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.lblfarmers = new MaterialSkin.Controls.MaterialLabel();
@@ -105,7 +97,10 @@ namespace ManageTask
             this.txphone = new MaterialSkin.Controls.MaterialTextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.materialCard7 = new MaterialSkin.Controls.MaterialCard();
+            this.panel28 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
             this.materialLabel9 = new MaterialSkin.Controls.MaterialLabel();
+            this.label7 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.materialCard9 = new MaterialSkin.Controls.MaterialCard();
             this.bunifuDataGridView2 = new Bunifu.UI.WinForms.BunifuDataGridView();
@@ -153,12 +148,13 @@ namespace ManageTask
             this.materialCard17 = new MaterialSkin.Controls.MaterialCard();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.materialCard18 = new MaterialSkin.Controls.MaterialCard();
-            this.label3 = new System.Windows.Forms.Label();
+            this.panel27 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.lblpayout = new MaterialSkin.Controls.MaterialLabel();
             this.lblupcoming = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel7 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
+            this.label3 = new System.Windows.Forms.Label();
             this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.bunifuDatePicker4 = new Bunifu.UI.WinForms.BunifuDatePicker();
@@ -181,6 +177,11 @@ namespace ManageTask
             this.tableLayoutPanel20 = new System.Windows.Forms.TableLayoutPanel();
             this.materialCard23 = new MaterialSkin.Controls.MaterialCard();
             this.bunifuDataGridView3 = new Bunifu.UI.WinForms.BunifuDataGridView();
+            this.idDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.paymentDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.paymentBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dairyFarmDataSet4 = new ManageTask.dairyFarmDataSet4();
             this.label1 = new System.Windows.Forms.Label();
             this.materialButton9 = new MaterialSkin.Controls.MaterialButton();
             this.tableLayoutPanel18 = new System.Windows.Forms.TableLayoutPanel();
@@ -189,10 +190,12 @@ namespace ManageTask
             this.tableLayoutPanel19 = new System.Windows.Forms.TableLayoutPanel();
             this.panel18 = new System.Windows.Forms.Panel();
             this.lblpay = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel16 = new MaterialSkin.Controls.MaterialLabel();
             this.materialButton8 = new MaterialSkin.Controls.MaterialButton();
             this.tableLayoutPanel21 = new System.Windows.Forms.TableLayoutPanel();
             this.materialTextBox5 = new MaterialSkin.Controls.MaterialTextBox();
             this.panel22 = new System.Windows.Forms.Panel();
+            this.panel26 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.tableLayoutPanel17 = new System.Windows.Forms.TableLayoutPanel();
@@ -204,26 +207,26 @@ namespace ManageTask
             this.materialCard21 = new MaterialSkin.Controls.MaterialCard();
             this.tableLayoutPanel16 = new System.Windows.Forms.TableLayoutPanel();
             this.panel19 = new System.Windows.Forms.Panel();
-            this.materialTextBox3 = new MaterialSkin.Controls.MaterialTextBox();
+            this.txtcat3 = new MaterialSkin.Controls.MaterialTextBox();
             this.panel21 = new System.Windows.Forms.Panel();
-            this.materialTextBox2 = new MaterialSkin.Controls.MaterialTextBox();
+            this.txtcat2 = new MaterialSkin.Controls.MaterialTextBox();
             this.panel23 = new System.Windows.Forms.Panel();
-            this.materialTextBox1 = new MaterialSkin.Controls.MaterialTextBox();
+            this.txtcat1 = new MaterialSkin.Controls.MaterialTextBox();
             this.panel25 = new System.Windows.Forms.Panel();
             this.materialLabel34 = new MaterialSkin.Controls.MaterialLabel();
             this.materialButton6 = new MaterialSkin.Controls.MaterialButton();
             this.materialCard20 = new MaterialSkin.Controls.MaterialCard();
             this.tableLayoutPanel15 = new System.Windows.Forms.TableLayoutPanel();
             this.panel17 = new System.Windows.Forms.Panel();
-            this.materialLabel26 = new MaterialSkin.Controls.MaterialLabel();
+            this.lblcat3 = new MaterialSkin.Controls.MaterialLabel();
             this.panel16 = new System.Windows.Forms.Panel();
             this.materialLabel23 = new MaterialSkin.Controls.MaterialLabel();
             this.panel15 = new System.Windows.Forms.Panel();
-            this.materialLabel25 = new MaterialSkin.Controls.MaterialLabel();
+            this.lblcat2 = new MaterialSkin.Controls.MaterialLabel();
             this.panel14 = new System.Windows.Forms.Panel();
             this.materialLabel22 = new MaterialSkin.Controls.MaterialLabel();
             this.panel13 = new System.Windows.Forms.Panel();
-            this.materialLabel24 = new MaterialSkin.Controls.MaterialLabel();
+            this.lblcat1 = new MaterialSkin.Controls.MaterialLabel();
             this.panel12 = new System.Windows.Forms.Panel();
             this.materialLabel21 = new MaterialSkin.Controls.MaterialLabel();
             this.panel11 = new System.Windows.Forms.Panel();
@@ -258,6 +261,7 @@ namespace ManageTask
             this.farmerTableAdapter = new ManageTask.dairyFarmDataSetTableAdapters.farmerTableAdapter();
             this.collectionTableAdapter = new ManageTask.dairyFarmDataSet1TableAdapters.collectionTableAdapter();
             this.collectionTableAdapter1 = new ManageTask.dairyFarmDataSet3TableAdapters.collectionTableAdapter();
+            this.paymentTableAdapter = new ManageTask.dairyFarmDataSet4TableAdapters.paymentTableAdapter();
             this.materialTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -265,10 +269,6 @@ namespace ManageTask
             ((System.ComponentModel.ISupportInitialize)(this.chart7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart9)).BeginInit();
-            this.tableLayoutPanel3.SuspendLayout();
-            this.materialCard4.SuspendLayout();
-            this.tableLayoutPanel4.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.materialCard3.SuspendLayout();
             this.materialCard2.SuspendLayout();
@@ -320,6 +320,8 @@ namespace ManageTask
             this.tableLayoutPanel20.SuspendLayout();
             this.materialCard23.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.paymentBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dairyFarmDataSet4)).BeginInit();
             this.tableLayoutPanel18.SuspendLayout();
             this.materialCard22.SuspendLayout();
             this.tableLayoutPanel19.SuspendLayout();
@@ -388,7 +390,6 @@ namespace ManageTask
             // 
             this.tabPage1.BackColor = System.Drawing.Color.White;
             this.tabPage1.Controls.Add(this.tableLayoutPanel2);
-            this.tabPage1.Controls.Add(this.tableLayoutPanel3);
             this.tabPage1.Controls.Add(this.tableLayoutPanel1);
             this.tabPage1.ImageKey = "icons8_dashboard_layout.ico";
             this.tabPage1.Location = new System.Drawing.Point(4, 39);
@@ -408,7 +409,7 @@ namespace ManageTask
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47.55639F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(678, 502);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(997, 502);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
             // materialCard5
@@ -425,7 +426,7 @@ namespace ManageTask
             this.materialCard5.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard5.Name = "materialCard5";
             this.materialCard5.Padding = new System.Windows.Forms.Padding(14);
-            this.materialCard5.Size = new System.Drawing.Size(650, 474);
+            this.materialCard5.Size = new System.Drawing.Size(969, 474);
             this.materialCard5.TabIndex = 4;
             // 
             // chart7
@@ -439,33 +440,23 @@ namespace ManageTask
             this.chart7.Legends.Add(legend1);
             this.chart7.Location = new System.Drawing.Point(14, 14);
             this.chart7.Name = "chart7";
+            this.chart7.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
             series1.BackSecondaryColor = System.Drawing.Color.Transparent;
             series1.BorderColor = System.Drawing.Color.Transparent;
             series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.SplineArea;
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series1.Font = new System.Drawing.Font("Segoe Marker", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series1.IsValueShownAsLabel = true;
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.chart7.Series.Add(series1);
-            this.chart7.Size = new System.Drawing.Size(622, 446);
+            this.chart7.Size = new System.Drawing.Size(941, 446);
             this.chart7.TabIndex = 7;
             this.chart7.Text = "chart7";
-            title1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title1.ForeColor = System.Drawing.Color.ForestGreen;
+            title1.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             title1.Name = "Title1";
             title1.Text = "COUNT OF FARMERS VS ADDRESS";
-            title2.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Bottom;
-            title2.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title2.ForeColor = System.Drawing.Color.ForestGreen;
-            title2.Name = "Title2";
-            title2.Text = "ADDRESS";
-            title3.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Left;
-            title3.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title3.ForeColor = System.Drawing.Color.ForestGreen;
-            title3.Name = "Title3";
-            title3.Text = "COUNT OF FARMERS";
             this.chart7.Titles.Add(title1);
-            this.chart7.Titles.Add(title2);
-            this.chart7.Titles.Add(title3);
             // 
             // chart8
             // 
@@ -481,7 +472,7 @@ namespace ManageTask
             series2.Legend = "Legend1";
             series2.Name = "Series1";
             this.chart8.Series.Add(series2);
-            this.chart8.Size = new System.Drawing.Size(622, 446);
+            this.chart8.Size = new System.Drawing.Size(941, 446);
             this.chart8.TabIndex = 6;
             this.chart8.Text = "chart8";
             // 
@@ -502,115 +493,9 @@ namespace ManageTask
             series3.Legend = "Legend1";
             series3.Name = "Series1";
             this.chart9.Series.Add(series3);
-            this.chart9.Size = new System.Drawing.Size(622, 446);
+            this.chart9.Size = new System.Drawing.Size(941, 446);
             this.chart9.TabIndex = 5;
             this.chart9.Text = "chart9";
-            // 
-            // tableLayoutPanel3
-            // 
-            this.tableLayoutPanel3.ColumnCount = 1;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Controls.Add(this.materialCard4, 0, 0);
-            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(681, 145);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 1;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(319, 502);
-            this.tableLayoutPanel3.TabIndex = 2;
-            // 
-            // materialCard4
-            // 
-            this.materialCard4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialCard4.Controls.Add(this.tableLayoutPanel4);
-            this.materialCard4.Depth = 0;
-            this.materialCard4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.materialCard4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard4.Location = new System.Drawing.Point(14, 14);
-            this.materialCard4.Margin = new System.Windows.Forms.Padding(14);
-            this.materialCard4.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialCard4.Name = "materialCard4";
-            this.materialCard4.Padding = new System.Windows.Forms.Padding(14);
-            this.materialCard4.Size = new System.Drawing.Size(291, 474);
-            this.materialCard4.TabIndex = 0;
-            // 
-            // tableLayoutPanel4
-            // 
-            this.tableLayoutPanel4.ColumnCount = 1;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Controls.Add(this.bunifuCircleProgress1, 0, 1);
-            this.tableLayoutPanel4.Controls.Add(this.panel2, 0, 0);
-            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(14, 14);
-            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 2;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.19911F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 86.8009F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(263, 446);
-            this.tableLayoutPanel4.TabIndex = 1;
-            // 
-            // bunifuCircleProgress1
-            // 
-            this.bunifuCircleProgress1.Animated = true;
-            this.bunifuCircleProgress1.AnimationInterval = 1;
-            this.bunifuCircleProgress1.AnimationSpeed = 1;
-            this.bunifuCircleProgress1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuCircleProgress1.CircleMargin = 10;
-            this.bunifuCircleProgress1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bunifuCircleProgress1.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold);
-            this.bunifuCircleProgress1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuCircleProgress1.IsPercentage = false;
-            this.bunifuCircleProgress1.LineProgressThickness = 10;
-            this.bunifuCircleProgress1.LineThickness = 10;
-            this.bunifuCircleProgress1.Location = new System.Drawing.Point(3, 61);
-            this.bunifuCircleProgress1.Name = "bunifuCircleProgress1";
-            this.bunifuCircleProgress1.ProgressAnimationSpeed = 200;
-            this.bunifuCircleProgress1.ProgressBackColor = System.Drawing.Color.Gainsboro;
-            this.bunifuCircleProgress1.ProgressColor = System.Drawing.Color.DodgerBlue;
-            this.bunifuCircleProgress1.ProgressColor2 = System.Drawing.Color.DodgerBlue;
-            this.bunifuCircleProgress1.ProgressEndCap = Bunifu.UI.WinForms.BunifuCircleProgress.CapStyles.Triangle;
-            this.bunifuCircleProgress1.ProgressFillStyle = Bunifu.UI.WinForms.BunifuCircleProgress.FillStyles.Solid;
-            this.bunifuCircleProgress1.ProgressStartCap = Bunifu.UI.WinForms.BunifuCircleProgress.CapStyles.Round;
-            this.bunifuCircleProgress1.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.bunifuCircleProgress1.Size = new System.Drawing.Size(257, 257);
-            this.bunifuCircleProgress1.SubScriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
-            this.bunifuCircleProgress1.SubScriptMargin = new System.Windows.Forms.Padding(5, -20, 0, 0);
-            this.bunifuCircleProgress1.SubScriptText = "%";
-            this.bunifuCircleProgress1.SuperScriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
-            this.bunifuCircleProgress1.SuperScriptMargin = new System.Windows.Forms.Padding(5, 20, 0, 0);
-            this.bunifuCircleProgress1.SuperScriptText = "";
-            this.bunifuCircleProgress1.TabIndex = 16;
-            this.bunifuCircleProgress1.Text = "30";
-            this.bunifuCircleProgress1.TextMargin = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.bunifuCircleProgress1.Value = 30;
-            this.bunifuCircleProgress1.ValueByTransition = 30;
-            this.bunifuCircleProgress1.ValueMargin = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.bunifuCircleProgress1.ProgressChanged += new System.EventHandler<Bunifu.UI.WinForms.BunifuCircleProgress.ProgressChangedEventArgs>(this.bunifuCircleProgress1_ProgressChanged);
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.materialLabel8);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(3, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(257, 52);
-            this.panel2.TabIndex = 4;
-            // 
-            // materialLabel8
-            // 
-            this.materialLabel8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.materialLabel8.AutoSize = true;
-            this.materialLabel8.Depth = 0;
-            this.materialLabel8.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel8.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
-            this.materialLabel8.Location = new System.Drawing.Point(5, 9);
-            this.materialLabel8.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel8.Name = "materialLabel8";
-            this.materialLabel8.Size = new System.Drawing.Size(241, 24);
-            this.materialLabel8.TabIndex = 4;
-            this.materialLabel8.Text = "CURRENT MILK CAPACITY";
             // 
             // tableLayoutPanel1
             // 
@@ -654,9 +539,9 @@ namespace ManageTask
             this.materialLabel5.Location = new System.Drawing.Point(14, 14);
             this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel5.Name = "materialLabel5";
-            this.materialLabel5.Size = new System.Drawing.Size(231, 19);
+            this.materialLabel5.Size = new System.Drawing.Size(242, 19);
             this.materialLabel5.TabIndex = 3;
-            this.materialLabel5.Text = "TOTAL MILK AVAILABLE(LTRS):";
+            this.materialLabel5.Text = "TOTAL MILK COLLECTED SO FAR";
             // 
             // lblmilk
             // 
@@ -676,7 +561,7 @@ namespace ManageTask
             // 
             this.materialCard2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.materialCard2.Controls.Add(this.materialLabel4);
-            this.materialCard2.Controls.Add(this.materialLabel6);
+            this.materialCard2.Controls.Add(this.lbltpay);
             this.materialCard2.Depth = 0;
             this.materialCard2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.materialCard2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -701,19 +586,19 @@ namespace ManageTask
             this.materialLabel4.TabIndex = 3;
             this.materialLabel4.Text = "TOTAL PAYMENTS(KSH):";
             // 
-            // materialLabel6
+            // lbltpay
             // 
-            this.materialLabel6.AutoSize = true;
-            this.materialLabel6.Depth = 0;
-            this.materialLabel6.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.materialLabel6.Font = new System.Drawing.Font("Roboto", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel6.FontType = MaterialSkin.MaterialSkinManager.fontType.H3;
-            this.materialLabel6.Location = new System.Drawing.Point(14, 42);
-            this.materialLabel6.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel6.Name = "materialLabel6";
-            this.materialLabel6.Size = new System.Drawing.Size(95, 58);
-            this.materialLabel6.TabIndex = 4;
-            this.materialLabel6.Text = "0.00";
+            this.lbltpay.AutoSize = true;
+            this.lbltpay.Depth = 0;
+            this.lbltpay.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lbltpay.Font = new System.Drawing.Font("Roboto", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lbltpay.FontType = MaterialSkin.MaterialSkinManager.fontType.H3;
+            this.lbltpay.Location = new System.Drawing.Point(14, 42);
+            this.lbltpay.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lbltpay.Name = "lbltpay";
+            this.lbltpay.Size = new System.Drawing.Size(95, 58);
+            this.lbltpay.TabIndex = 4;
+            this.lbltpay.Text = "0.00";
             // 
             // materialCard1
             // 
@@ -1089,7 +974,10 @@ namespace ManageTask
             // materialCard7
             // 
             this.materialCard7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard7.Controls.Add(this.panel28);
+            this.materialCard7.Controls.Add(this.label6);
             this.materialCard7.Controls.Add(this.materialLabel9);
+            this.materialCard7.Controls.Add(this.label7);
             this.materialCard7.Depth = 0;
             this.materialCard7.Dock = System.Windows.Forms.DockStyle.Top;
             this.materialCard7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -1100,6 +988,24 @@ namespace ManageTask
             this.materialCard7.Padding = new System.Windows.Forms.Padding(14);
             this.materialCard7.Size = new System.Drawing.Size(997, 64);
             this.materialCard7.TabIndex = 1;
+            // 
+            // panel28
+            // 
+            this.panel28.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel28.Location = new System.Drawing.Point(28, 9);
+            this.panel28.Name = "panel28";
+            this.panel28.Size = new System.Drawing.Size(77, 49);
+            this.panel28.TabIndex = 2;
+            // 
+            // label6
+            // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(25, 34);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(13, 13);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "0";
             // 
             // materialLabel9
             // 
@@ -1114,6 +1020,16 @@ namespace ManageTask
             this.materialLabel9.Size = new System.Drawing.Size(703, 58);
             this.materialLabel9.TabIndex = 0;
             this.materialLabel9.Text = "REGISTER NEW FARMERS HERE!";
+            // 
+            // label7
+            // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(55, 34);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(35, 13);
+            this.label7.TabIndex = 3;
+            this.label7.Text = "NULL";
             // 
             // tabPage3
             // 
@@ -1806,6 +1722,8 @@ namespace ManageTask
             this.chart1.Location = new System.Drawing.Point(14, 14);
             this.chart1.Name = "chart1";
             series4.ChartArea = "ChartArea1";
+            series4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series4.IsValueShownAsLabel = true;
             series4.Legend = "Legend1";
             series4.Name = "Series1";
             series4.YValuesPerPoint = 2;
@@ -1813,30 +1731,31 @@ namespace ManageTask
             this.chart1.Size = new System.Drawing.Size(642, 249);
             this.chart1.TabIndex = 9;
             this.chart1.Text = "chart1";
-            title4.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title4.Name = "Title1";
-            title4.Text = "INDIVIDUAL FARMER PERIODIC MILK CONTRIBUTION";
-            title5.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Left;
-            title5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title5.Name = "Title2";
-            title5.Text = "QUANTITY IN LTRS";
-            title6.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Bottom;
-            title6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title6.Name = "Title3";
-            title6.Text = "DATE";
+            title2.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title2.Name = "Title1";
+            title2.Text = "INDIVIDUAL FARMER PERIODIC MILK CONTRIBUTION";
+            title3.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Left;
+            title3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title3.Name = "Title2";
+            title3.Text = "QUANTITY IN LTRS";
+            title4.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Bottom;
+            title4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title4.Name = "Title3";
+            title4.Text = "DATE";
+            this.chart1.Titles.Add(title2);
+            this.chart1.Titles.Add(title3);
             this.chart1.Titles.Add(title4);
-            this.chart1.Titles.Add(title5);
-            this.chart1.Titles.Add(title6);
             // 
             // materialCard18
             // 
             this.materialCard18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialCard18.Controls.Add(this.label3);
+            this.materialCard18.Controls.Add(this.panel27);
             this.materialCard18.Controls.Add(this.label2);
             this.materialCard18.Controls.Add(this.lblpayout);
             this.materialCard18.Controls.Add(this.lblupcoming);
             this.materialCard18.Controls.Add(this.materialLabel7);
             this.materialCard18.Controls.Add(this.materialLabel2);
+            this.materialCard18.Controls.Add(this.label3);
             this.materialCard18.Depth = 0;
             this.materialCard18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.materialCard18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -1848,21 +1767,19 @@ namespace ManageTask
             this.materialCard18.Size = new System.Drawing.Size(235, 277);
             this.materialCard18.TabIndex = 1;
             // 
-            // label3
+            // panel27
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(140, 241);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "label3";
+            this.panel27.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel27.Location = new System.Drawing.Point(98, 202);
+            this.panel27.Name = "panel27";
+            this.panel27.Size = new System.Drawing.Size(148, 75);
+            this.panel27.TabIndex = 4;
             // 
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(136, 197);
+            this.label2.Location = new System.Drawing.Point(146, 208);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 2;
@@ -1872,12 +1789,12 @@ namespace ManageTask
             // 
             this.lblpayout.AutoSize = true;
             this.lblpayout.Depth = 0;
-            this.lblpayout.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.lblpayout.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            this.lblpayout.Font = new System.Drawing.Font("Roboto", 34F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblpayout.FontType = MaterialSkin.MaterialSkinManager.fontType.H4;
             this.lblpayout.Location = new System.Drawing.Point(31, 96);
             this.lblpayout.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblpayout.Name = "lblpayout";
-            this.lblpayout.Size = new System.Drawing.Size(40, 24);
+            this.lblpayout.Size = new System.Drawing.Size(67, 41);
             this.lblpayout.TabIndex = 1;
             this.lblpayout.Text = "0.00";
             // 
@@ -1885,12 +1802,12 @@ namespace ManageTask
             // 
             this.lblupcoming.AutoSize = true;
             this.lblupcoming.Depth = 0;
-            this.lblupcoming.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.lblupcoming.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
-            this.lblupcoming.Location = new System.Drawing.Point(31, 197);
+            this.lblupcoming.Font = new System.Drawing.Font("Roboto", 34F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblupcoming.FontType = MaterialSkin.MaterialSkinManager.fontType.H4;
+            this.lblupcoming.Location = new System.Drawing.Point(17, 180);
             this.lblupcoming.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblupcoming.Name = "lblupcoming";
-            this.lblupcoming.Size = new System.Drawing.Size(40, 24);
+            this.lblupcoming.Size = new System.Drawing.Size(67, 41);
             this.lblupcoming.TabIndex = 1;
             this.lblupcoming.Text = "0.00";
             // 
@@ -1898,8 +1815,9 @@ namespace ManageTask
             // 
             this.materialLabel7.AutoSize = true;
             this.materialLabel7.Depth = 0;
-            this.materialLabel7.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel7.Location = new System.Drawing.Point(17, 149);
+            this.materialLabel7.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel7.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle1;
+            this.materialLabel7.Location = new System.Drawing.Point(15, 151);
             this.materialLabel7.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel7.Name = "materialLabel7";
             this.materialLabel7.Size = new System.Drawing.Size(212, 19);
@@ -1910,13 +1828,24 @@ namespace ManageTask
             // 
             this.materialLabel2.AutoSize = true;
             this.materialLabel2.Depth = 0;
-            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel2.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel2.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
             this.materialLabel2.Location = new System.Drawing.Point(17, 52);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(158, 19);
+            this.materialLabel2.Size = new System.Drawing.Size(198, 24);
             this.materialLabel2.TabIndex = 0;
             this.materialLabel2.Text = "TOTAL PAYOUT(KSH)";
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(146, 250);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "label3";
             // 
             // tableLayoutPanel11
             // 
@@ -2261,10 +2190,13 @@ namespace ManageTask
             // bunifuDataGridView3
             // 
             this.bunifuDataGridView3.AllowCustomTheming = false;
+            this.bunifuDataGridView3.AllowUserToAddRows = false;
             dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
             this.bunifuDataGridView3.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            this.bunifuDataGridView3.AutoGenerateColumns = false;
             this.bunifuDataGridView3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.bunifuDataGridView3.BackgroundColor = System.Drawing.Color.White;
             this.bunifuDataGridView3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.bunifuDataGridView3.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.bunifuDataGridView3.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -2277,6 +2209,10 @@ namespace ManageTask
             dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.bunifuDataGridView3.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.bunifuDataGridView3.ColumnHeadersHeight = 40;
+            this.bunifuDataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn2,
+            this.paymentDataGridViewTextBoxColumn,
+            this.dateDataGridViewTextBoxColumn2});
             this.bunifuDataGridView3.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             this.bunifuDataGridView3.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.bunifuDataGridView3.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
@@ -2295,6 +2231,7 @@ namespace ManageTask
             this.bunifuDataGridView3.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
             this.bunifuDataGridView3.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
             this.bunifuDataGridView3.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.bunifuDataGridView3.DataSource = this.paymentBindingSource;
             dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
@@ -2317,6 +2254,34 @@ namespace ManageTask
             this.bunifuDataGridView3.Size = new System.Drawing.Size(629, 257);
             this.bunifuDataGridView3.TabIndex = 0;
             this.bunifuDataGridView3.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            // 
+            // idDataGridViewTextBoxColumn2
+            // 
+            this.idDataGridViewTextBoxColumn2.DataPropertyName = "id";
+            this.idDataGridViewTextBoxColumn2.HeaderText = "id";
+            this.idDataGridViewTextBoxColumn2.Name = "idDataGridViewTextBoxColumn2";
+            // 
+            // paymentDataGridViewTextBoxColumn
+            // 
+            this.paymentDataGridViewTextBoxColumn.DataPropertyName = "payment";
+            this.paymentDataGridViewTextBoxColumn.HeaderText = "payment";
+            this.paymentDataGridViewTextBoxColumn.Name = "paymentDataGridViewTextBoxColumn";
+            // 
+            // dateDataGridViewTextBoxColumn2
+            // 
+            this.dateDataGridViewTextBoxColumn2.DataPropertyName = "date";
+            this.dateDataGridViewTextBoxColumn2.HeaderText = "date";
+            this.dateDataGridViewTextBoxColumn2.Name = "dateDataGridViewTextBoxColumn2";
+            // 
+            // paymentBindingSource
+            // 
+            this.paymentBindingSource.DataMember = "payment";
+            this.paymentBindingSource.DataSource = this.dairyFarmDataSet4;
+            // 
+            // dairyFarmDataSet4
+            // 
+            this.dairyFarmDataSet4.DataSetName = "dairyFarmDataSet4";
+            this.dairyFarmDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label1
             // 
@@ -2410,6 +2375,7 @@ namespace ManageTask
             // panel18
             // 
             this.panel18.Controls.Add(this.lblpay);
+            this.panel18.Controls.Add(this.materialLabel16);
             this.panel18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel18.Location = new System.Drawing.Point(3, 3);
             this.panel18.Name = "panel18";
@@ -2423,12 +2389,26 @@ namespace ManageTask
             this.lblpay.Dock = System.Windows.Forms.DockStyle.Left;
             this.lblpay.Font = new System.Drawing.Font("Roboto", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.lblpay.FontType = MaterialSkin.MaterialSkinManager.fontType.H3;
-            this.lblpay.Location = new System.Drawing.Point(0, 0);
+            this.lblpay.Location = new System.Drawing.Point(98, 0);
             this.lblpay.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblpay.Name = "lblpay";
             this.lblpay.Size = new System.Drawing.Size(95, 58);
             this.lblpay.TabIndex = 0;
             this.lblpay.Text = "0.00";
+            // 
+            // materialLabel16
+            // 
+            this.materialLabel16.AutoSize = true;
+            this.materialLabel16.Depth = 0;
+            this.materialLabel16.Dock = System.Windows.Forms.DockStyle.Left;
+            this.materialLabel16.Font = new System.Drawing.Font("Roboto", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel16.FontType = MaterialSkin.MaterialSkinManager.fontType.H3;
+            this.materialLabel16.Location = new System.Drawing.Point(0, 0);
+            this.materialLabel16.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel16.Name = "materialLabel16";
+            this.materialLabel16.Size = new System.Drawing.Size(98, 58);
+            this.materialLabel16.TabIndex = 1;
+            this.materialLabel16.Text = "KES ";
             // 
             // materialButton8
             // 
@@ -2487,6 +2467,7 @@ namespace ManageTask
             // 
             // panel22
             // 
+            this.panel22.Controls.Add(this.panel26);
             this.panel22.Controls.Add(this.label5);
             this.panel22.Controls.Add(this.label4);
             this.panel22.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -2494,6 +2475,14 @@ namespace ManageTask
             this.panel22.Name = "panel22";
             this.panel22.Size = new System.Drawing.Size(93, 44);
             this.panel22.TabIndex = 1;
+            // 
+            // panel26
+            // 
+            this.panel26.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel26.Location = new System.Drawing.Point(0, 0);
+            this.panel26.Name = "panel26";
+            this.panel26.Size = new System.Drawing.Size(93, 44);
+            this.panel26.TabIndex = 4;
             // 
             // label5
             // 
@@ -2637,87 +2626,87 @@ namespace ManageTask
             // 
             // panel19
             // 
-            this.panel19.Controls.Add(this.materialTextBox3);
+            this.panel19.Controls.Add(this.txtcat3);
             this.panel19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel19.Location = new System.Drawing.Point(3, 147);
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(256, 43);
             this.panel19.TabIndex = 6;
             // 
-            // materialTextBox3
+            // txtcat3
             // 
-            this.materialTextBox3.AnimateReadOnly = false;
-            this.materialTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox3.Depth = 0;
-            this.materialTextBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.materialTextBox3.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox3.Hint = "CATEGORY3";
-            this.materialTextBox3.LeadingIcon = null;
-            this.materialTextBox3.Location = new System.Drawing.Point(0, 0);
-            this.materialTextBox3.MaxLength = 50;
-            this.materialTextBox3.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox3.Multiline = false;
-            this.materialTextBox3.Name = "materialTextBox3";
-            this.materialTextBox3.Size = new System.Drawing.Size(256, 50);
-            this.materialTextBox3.TabIndex = 1;
-            this.materialTextBox3.Text = "";
-            this.materialTextBox3.TrailingIcon = null;
+            this.txtcat3.AnimateReadOnly = false;
+            this.txtcat3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtcat3.Depth = 0;
+            this.txtcat3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtcat3.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtcat3.Hint = "CATEGORY3";
+            this.txtcat3.LeadingIcon = null;
+            this.txtcat3.Location = new System.Drawing.Point(0, 0);
+            this.txtcat3.MaxLength = 50;
+            this.txtcat3.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtcat3.Multiline = false;
+            this.txtcat3.Name = "txtcat3";
+            this.txtcat3.Size = new System.Drawing.Size(256, 50);
+            this.txtcat3.TabIndex = 1;
+            this.txtcat3.Text = "";
+            this.txtcat3.TrailingIcon = null;
             // 
             // panel21
             // 
-            this.panel21.Controls.Add(this.materialTextBox2);
+            this.panel21.Controls.Add(this.txtcat2);
             this.panel21.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel21.Location = new System.Drawing.Point(3, 99);
             this.panel21.Name = "panel21";
             this.panel21.Size = new System.Drawing.Size(256, 42);
             this.panel21.TabIndex = 4;
             // 
-            // materialTextBox2
+            // txtcat2
             // 
-            this.materialTextBox2.AnimateReadOnly = false;
-            this.materialTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox2.Depth = 0;
-            this.materialTextBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.materialTextBox2.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox2.Hint = "CATEGORY2";
-            this.materialTextBox2.LeadingIcon = null;
-            this.materialTextBox2.Location = new System.Drawing.Point(0, 0);
-            this.materialTextBox2.MaxLength = 50;
-            this.materialTextBox2.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox2.Multiline = false;
-            this.materialTextBox2.Name = "materialTextBox2";
-            this.materialTextBox2.Size = new System.Drawing.Size(256, 50);
-            this.materialTextBox2.TabIndex = 1;
-            this.materialTextBox2.Text = "";
-            this.materialTextBox2.TrailingIcon = null;
+            this.txtcat2.AnimateReadOnly = false;
+            this.txtcat2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtcat2.Depth = 0;
+            this.txtcat2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtcat2.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtcat2.Hint = "CATEGORY2";
+            this.txtcat2.LeadingIcon = null;
+            this.txtcat2.Location = new System.Drawing.Point(0, 0);
+            this.txtcat2.MaxLength = 50;
+            this.txtcat2.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtcat2.Multiline = false;
+            this.txtcat2.Name = "txtcat2";
+            this.txtcat2.Size = new System.Drawing.Size(256, 50);
+            this.txtcat2.TabIndex = 1;
+            this.txtcat2.Text = "";
+            this.txtcat2.TrailingIcon = null;
             // 
             // panel23
             // 
-            this.panel23.Controls.Add(this.materialTextBox1);
+            this.panel23.Controls.Add(this.txtcat1);
             this.panel23.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel23.Location = new System.Drawing.Point(3, 51);
             this.panel23.Name = "panel23";
             this.panel23.Size = new System.Drawing.Size(256, 42);
             this.panel23.TabIndex = 2;
             // 
-            // materialTextBox1
+            // txtcat1
             // 
-            this.materialTextBox1.AnimateReadOnly = false;
-            this.materialTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox1.Depth = 0;
-            this.materialTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.materialTextBox1.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox1.Hint = "CATEGORY1";
-            this.materialTextBox1.LeadingIcon = null;
-            this.materialTextBox1.Location = new System.Drawing.Point(0, 0);
-            this.materialTextBox1.MaxLength = 50;
-            this.materialTextBox1.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox1.Multiline = false;
-            this.materialTextBox1.Name = "materialTextBox1";
-            this.materialTextBox1.Size = new System.Drawing.Size(256, 50);
-            this.materialTextBox1.TabIndex = 0;
-            this.materialTextBox1.Text = "";
-            this.materialTextBox1.TrailingIcon = null;
+            this.txtcat1.AnimateReadOnly = false;
+            this.txtcat1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtcat1.Depth = 0;
+            this.txtcat1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtcat1.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtcat1.Hint = "CATEGORY1";
+            this.txtcat1.LeadingIcon = null;
+            this.txtcat1.Location = new System.Drawing.Point(0, 0);
+            this.txtcat1.MaxLength = 50;
+            this.txtcat1.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtcat1.Multiline = false;
+            this.txtcat1.Name = "txtcat1";
+            this.txtcat1.Size = new System.Drawing.Size(256, 50);
+            this.txtcat1.TabIndex = 0;
+            this.txtcat1.Text = "";
+            this.txtcat1.TrailingIcon = null;
             // 
             // panel25
             // 
@@ -2761,6 +2750,7 @@ namespace ManageTask
             this.materialButton6.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.materialButton6.UseAccentColor = false;
             this.materialButton6.UseVisualStyleBackColor = true;
+            this.materialButton6.Click += new System.EventHandler(this.materialButton6_Click);
             // 
             // materialCard20
             // 
@@ -2803,26 +2793,26 @@ namespace ManageTask
             // 
             // panel17
             // 
-            this.panel17.Controls.Add(this.materialLabel26);
+            this.panel17.Controls.Add(this.lblcat3);
             this.panel17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel17.Location = new System.Drawing.Point(134, 186);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(125, 56);
             this.panel17.TabIndex = 7;
             // 
-            // materialLabel26
+            // lblcat3
             // 
-            this.materialLabel26.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.materialLabel26.AutoSize = true;
-            this.materialLabel26.Depth = 0;
-            this.materialLabel26.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel26.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
-            this.materialLabel26.Location = new System.Drawing.Point(38, 19);
-            this.materialLabel26.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel26.Name = "materialLabel26";
-            this.materialLabel26.Size = new System.Drawing.Size(40, 24);
-            this.materialLabel26.TabIndex = 0;
-            this.materialLabel26.Text = "0.00";
+            this.lblcat3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblcat3.AutoSize = true;
+            this.lblcat3.Depth = 0;
+            this.lblcat3.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblcat3.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            this.lblcat3.Location = new System.Drawing.Point(38, 19);
+            this.lblcat3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblcat3.Name = "lblcat3";
+            this.lblcat3.Size = new System.Drawing.Size(40, 24);
+            this.lblcat3.TabIndex = 0;
+            this.lblcat3.Text = "0.00";
             // 
             // panel16
             // 
@@ -2843,32 +2833,32 @@ namespace ManageTask
             this.materialLabel23.Location = new System.Drawing.Point(9, 19);
             this.materialLabel23.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel23.Name = "materialLabel23";
-            this.materialLabel23.Size = new System.Drawing.Size(113, 24);
+            this.materialLabel23.Size = new System.Drawing.Size(98, 24);
             this.materialLabel23.TabIndex = 0;
-            this.materialLabel23.Text = "CATEGORY3";
+            this.materialLabel23.Text = "Category 3";
             // 
             // panel15
             // 
-            this.panel15.Controls.Add(this.materialLabel25);
+            this.panel15.Controls.Add(this.lblcat2);
             this.panel15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel15.Location = new System.Drawing.Point(134, 125);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(125, 55);
             this.panel15.TabIndex = 5;
             // 
-            // materialLabel25
+            // lblcat2
             // 
-            this.materialLabel25.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.materialLabel25.AutoSize = true;
-            this.materialLabel25.Depth = 0;
-            this.materialLabel25.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel25.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
-            this.materialLabel25.Location = new System.Drawing.Point(38, 15);
-            this.materialLabel25.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel25.Name = "materialLabel25";
-            this.materialLabel25.Size = new System.Drawing.Size(40, 24);
-            this.materialLabel25.TabIndex = 0;
-            this.materialLabel25.Text = "0.00";
+            this.lblcat2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblcat2.AutoSize = true;
+            this.lblcat2.Depth = 0;
+            this.lblcat2.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblcat2.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            this.lblcat2.Location = new System.Drawing.Point(38, 15);
+            this.lblcat2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblcat2.Name = "lblcat2";
+            this.lblcat2.Size = new System.Drawing.Size(40, 24);
+            this.lblcat2.TabIndex = 0;
+            this.lblcat2.Text = "0.00";
             // 
             // panel14
             // 
@@ -2889,32 +2879,32 @@ namespace ManageTask
             this.materialLabel22.Location = new System.Drawing.Point(9, 15);
             this.materialLabel22.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel22.Name = "materialLabel22";
-            this.materialLabel22.Size = new System.Drawing.Size(113, 24);
+            this.materialLabel22.Size = new System.Drawing.Size(98, 24);
             this.materialLabel22.TabIndex = 0;
-            this.materialLabel22.Text = "CATEGORY2";
+            this.materialLabel22.Text = "Category 2";
             // 
             // panel13
             // 
-            this.panel13.Controls.Add(this.materialLabel24);
+            this.panel13.Controls.Add(this.lblcat1);
             this.panel13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel13.Location = new System.Drawing.Point(134, 64);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(125, 55);
             this.panel13.TabIndex = 3;
             // 
-            // materialLabel24
+            // lblcat1
             // 
-            this.materialLabel24.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.materialLabel24.AutoSize = true;
-            this.materialLabel24.Depth = 0;
-            this.materialLabel24.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel24.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
-            this.materialLabel24.Location = new System.Drawing.Point(38, 17);
-            this.materialLabel24.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel24.Name = "materialLabel24";
-            this.materialLabel24.Size = new System.Drawing.Size(40, 24);
-            this.materialLabel24.TabIndex = 0;
-            this.materialLabel24.Text = "0.00";
+            this.lblcat1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblcat1.AutoSize = true;
+            this.lblcat1.Depth = 0;
+            this.lblcat1.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblcat1.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            this.lblcat1.Location = new System.Drawing.Point(38, 17);
+            this.lblcat1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblcat1.Name = "lblcat1";
+            this.lblcat1.Size = new System.Drawing.Size(40, 24);
+            this.lblcat1.TabIndex = 0;
+            this.lblcat1.Text = "0.00";
             // 
             // panel12
             // 
@@ -2935,9 +2925,9 @@ namespace ManageTask
             this.materialLabel21.Location = new System.Drawing.Point(9, 17);
             this.materialLabel21.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel21.Name = "materialLabel21";
-            this.materialLabel21.Size = new System.Drawing.Size(113, 24);
+            this.materialLabel21.Size = new System.Drawing.Size(98, 24);
             this.materialLabel21.TabIndex = 0;
-            this.materialLabel21.Text = "CATEGORY1";
+            this.materialLabel21.Text = "Category 1";
             // 
             // panel11
             // 
@@ -3339,6 +3329,10 @@ namespace ManageTask
             // 
             this.collectionTableAdapter1.ClearBeforeFill = true;
             // 
+            // paymentTableAdapter
+            // 
+            this.paymentTableAdapter.ClearBeforeFill = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3349,7 +3343,8 @@ namespace ManageTask
             this.DrawerShowIconsWhenHidden = true;
             this.DrawerTabControl = this.materialTabControl1;
             this.Name = "Form1";
-            this.Text = "DAIRY FARM MANAGEMENT SYSTEM";
+            this.Text = " ";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.materialTabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
@@ -3358,11 +3353,6 @@ namespace ManageTask
             ((System.ComponentModel.ISupportInitialize)(this.chart7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart9)).EndInit();
-            this.tableLayoutPanel3.ResumeLayout(false);
-            this.materialCard4.ResumeLayout(false);
-            this.tableLayoutPanel4.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.materialCard3.ResumeLayout(false);
             this.materialCard3.PerformLayout();
@@ -3434,6 +3424,8 @@ namespace ManageTask
             this.materialCard23.ResumeLayout(false);
             this.materialCard23.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.paymentBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dairyFarmDataSet4)).EndInit();
             this.tableLayoutPanel18.ResumeLayout(false);
             this.materialCard22.ResumeLayout(false);
             this.materialCard22.PerformLayout();
@@ -3521,14 +3513,8 @@ namespace ManageTask
         private MaterialSkin.Controls.MaterialLabel materialLabel5;
         private MaterialSkin.Controls.MaterialLabel lblmilk;
         private MaterialSkin.Controls.MaterialLabel materialLabel4;
-        private MaterialSkin.Controls.MaterialLabel materialLabel6;
+        private MaterialSkin.Controls.MaterialLabel lbltpay;
         private MaterialSkin.Controls.MaterialLabel lblfarmers;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private MaterialSkin.Controls.MaterialCard materialCard4;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private Bunifu.UI.WinForms.BunifuCircleProgress bunifuCircleProgress1;
-        private System.Windows.Forms.Panel panel2;
-        private MaterialSkin.Controls.MaterialLabel materialLabel8;
         private MaterialSkin.Controls.MaterialCard materialCard8;
         private Bunifu.UI.WinForms.BunifuDataGridView bunifuDataGridView1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
@@ -3638,26 +3624,26 @@ namespace ManageTask
         private MaterialSkin.Controls.MaterialCard materialCard21;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel16;
         private System.Windows.Forms.Panel panel19;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox3;
+        private MaterialSkin.Controls.MaterialTextBox txtcat3;
         private System.Windows.Forms.Panel panel21;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox2;
+        private MaterialSkin.Controls.MaterialTextBox txtcat2;
         private System.Windows.Forms.Panel panel23;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox1;
+        private MaterialSkin.Controls.MaterialTextBox txtcat1;
         private System.Windows.Forms.Panel panel25;
         private MaterialSkin.Controls.MaterialLabel materialLabel34;
         private MaterialSkin.Controls.MaterialButton materialButton6;
         private MaterialSkin.Controls.MaterialCard materialCard20;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel15;
         private System.Windows.Forms.Panel panel17;
-        private MaterialSkin.Controls.MaterialLabel materialLabel26;
+        private MaterialSkin.Controls.MaterialLabel lblcat3;
         private System.Windows.Forms.Panel panel16;
         private MaterialSkin.Controls.MaterialLabel materialLabel23;
         private System.Windows.Forms.Panel panel15;
-        private MaterialSkin.Controls.MaterialLabel materialLabel25;
+        private MaterialSkin.Controls.MaterialLabel lblcat2;
         private System.Windows.Forms.Panel panel14;
         private MaterialSkin.Controls.MaterialLabel materialLabel22;
         private System.Windows.Forms.Panel panel13;
-        private MaterialSkin.Controls.MaterialLabel materialLabel24;
+        private MaterialSkin.Controls.MaterialLabel lblcat1;
         private System.Windows.Forms.Panel panel12;
         private MaterialSkin.Controls.MaterialLabel materialLabel21;
         private System.Windows.Forms.Panel panel11;
@@ -3698,6 +3684,18 @@ namespace ManageTask
         private System.Windows.Forms.Panel panel24;
         private MaterialSkin.Controls.MaterialTextBox txtsearchpay;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Panel panel26;
+        private dairyFarmDataSet4 dairyFarmDataSet4;
+        private System.Windows.Forms.BindingSource paymentBindingSource;
+        private dairyFarmDataSet4TableAdapters.paymentTableAdapter paymentTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn paymentDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dateDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.Panel panel28;
+        private System.Windows.Forms.Panel panel27;
+        private MaterialSkin.Controls.MaterialLabel materialLabel16;
+        private System.Windows.Forms.Label label7;
     }
 }
 
