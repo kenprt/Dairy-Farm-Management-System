@@ -26,6 +26,7 @@ namespace ManageTask
             materialSkinManager.ColorScheme = new ColorScheme(Primary.Blue800, Primary.Blue900, Primary.Blue500, Accent.Blue200, TextShade.WHITE);
 
         }
+        MaterialSkinManager TManager = MaterialSkinManager.Instance;
         public void loadChart()
         {
             try
@@ -175,7 +176,9 @@ namespace ManageTask
             txtcat2.Text = lblcat2.Text;
             txtcat3.Text = lblcat3.Text;
             loadGeneralReports();
+            searchCollection();
             this.reportViewer1.RefreshReport();
+
         }
 
         private void tableLayoutPanel3_Paint(object sender, PaintEventArgs e)
@@ -454,7 +457,46 @@ namespace ManageTask
 
         private void bunifuDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (bunifuDataGridView1.Columns[e.ColumnIndex].Name == "view")
+            {
+                DataGridViewRow dr = new DataGridViewRow();
+                dr = bunifuDataGridView1.SelectedRows[0];
+                txtid.Text = dr.Cells[0].Value.ToString();
+                txtname.Text = dr.Cells[1].Value.ToString();
+                txtaddress.Text = dr.Cells[2].Value.ToString();
+                txphone.Text = dr.Cells[3].Value.ToString();
+            }
+            else if (bunifuDataGridView1.Columns[e.ColumnIndex].Name == "delete")
+            {
+                try
+                {
+                    if(txtid.Text == "")
+                    {
+                        MessageBox.Show("The id field is required", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    else
+                    {
+                        con.Open();
+                        if(con.State == System.Data.ConnectionState.Open)
+                        {
+                            SqlCommand cmd = new SqlCommand("Delete From farmer where id = '"+txtid.Text+"'", con);
+                           if(MessageBox.Show("Are you sure you want to pernently delete this record?","Confirmation",MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                            {
+                                cmd.ExecuteNonQuery();
+                                MessageBox.Show("Record Deleted Successfully", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            }
+                        }
+                    }
+                }catch(Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
 
+                }
+                finally
+                {
+                    con.Close();
+                }
+            }
         }
 
         private void bunifuCircleProgress1_ProgressChanged(object sender, Bunifu.UI.WinForms.BunifuCircleProgress.ProgressChangedEventArgs e)
@@ -578,8 +620,27 @@ namespace ManageTask
                         MessageBox.Show("Payment caried out Successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         bindPayment();
                         countPayment();
+                        recipt rc = new recipt();
+                        SqlCommand rcommand = new SqlCommand("Select * From farmer where id = '" + txtsearchpay.Text + "'", con);
+                        SqlDataAdapter radapter = new SqlDataAdapter(rcommand);
+                        DataTable rtable = new DataTable();
+                        radapter.Fill(rtable);
+                        if (rtable.Rows.Count > 0)
+                        {
+                            rc.lblrid.Text = rtable.Rows[0][0].ToString();
+                            rc.lblrname.Text = rtable.Rows[0][1].ToString();
+                            rc.lblrtotal.Text = lblpay.Text;
+                            rc.Show();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Wrong Input", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
                         txtsearchpay.Text = "";
                         lblpay.Text = "0.00";
+                       
+
+                        
                     }
 
                 }catch(Exception ex)
@@ -625,6 +686,38 @@ namespace ManageTask
                     con.Close();
                 }
             }
+        }
+        public void searchCollection()
+        {
+            SqlDataAdapter adapter = new SqlDataAdapter("Select * FROM collection WHERE nationalnum LIKE '" + this.txtfind.Text + "%'OR category LIKE '" + this.txtfind.Text + "%'", con);
+            DataTable dt = new DataTable();
+            adapter.Fill(dt);
+            bunifuDataGridView2.DataSource = dt;
+        }
+
+        private void materialSwitch1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (materialSwitch1.Checked)
+            {
+                TManager.Theme = MaterialSkinManager.Themes.DARK;
+                //dvgdata.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+                bunifuDataGridView1.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Dark;
+                bunifuDataGridView2.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Dark;
+                bunifuDataGridView3.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Dark;
+            }
+            else
+            {
+                TManager.Theme = MaterialSkinManager.Themes.LIGHT;
+                //dvgdata.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Dark;
+                bunifuDataGridView1.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+                bunifuDataGridView2.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+                bunifuDataGridView3.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            }
+        }
+
+        private void txtfind_TextChanged_1(object sender, EventArgs e)
+        {
+            searchCollection();
         }
     }
 }
